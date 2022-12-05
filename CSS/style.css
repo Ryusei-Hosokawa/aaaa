@@ -22,10 +22,6 @@ body {
     background: var(--base_white);
 }
 
-#horizontal-area {
-    overflow: hidden;
-}
-
 /*
  header 
 */
