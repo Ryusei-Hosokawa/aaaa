@@ -17,9 +17,15 @@
 
 /* Base */
 body {
+    -webkit-text-size-adjust: 100%;
     font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans",
         "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
     background: var(--base_white);
+
+}
+
+#horizontal-area {
+    overflow: hidden;
 }
 
 /*
@@ -42,6 +48,7 @@ button {
     position: fixed;
     background: rgba(var(--glass_color));
     backdrop-filter: blur(20px);
+    transform: translateZ(0);
     top: 0;
     right: 0;
     border-radius: 3px;
@@ -74,6 +81,7 @@ button span:nth-child(2) {
     height: 100vh;
     background: rgba(var(--glass_color));
     backdrop-filter: blur(20px);
+    transform: translateZ(0);
     transform: translate(100%);
     position: fixed;
     z-index: 50;
@@ -136,7 +144,6 @@ Main
 .hero_video {
     width: 100vw;
     height: 100vh;
-    -webkit-object-fit: cover;
     object-fit: cover;
 }
 
@@ -147,7 +154,6 @@ Main
     top: 0;
     left: 0;
     overflow: hidden;
-    -webkit-object-fit: cover;
     object-fit: cover;
     opacity: 0.85;
 }
@@ -192,7 +198,6 @@ Parallax
 }
 
 #about-link p span {
-    width: auto;
     display: inline-block;
     letter-spacing: 0.13em;
     margin-right: 0.732vw;
@@ -334,6 +339,7 @@ Portfolios
 .portfolio-card .portfolio-content a {
     display: inline-block;
     font-size: 16px;
+    font-weight: bold;
     margin-top: 20px;
     padding: 5px 20px;
     border-radius: 50px;
