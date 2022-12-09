@@ -3,6 +3,9 @@
 
 /* Horizontal-scroll-adjustment */
 
+html {
+  max-height: 100vh;
+
 body {
   overscroll-behavior: none;
   flex-wrap: nowrap;
