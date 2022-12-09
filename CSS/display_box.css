@@ -10,7 +10,7 @@ html {
 body {
   overscroll-behavior: none;
   flex-wrap: nowrap;
-  height: 100vh;
+  height: 0;
 }
 
 #js-item,
